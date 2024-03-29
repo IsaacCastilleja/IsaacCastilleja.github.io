@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 export function Experience() {
     return (
         <Container>
-            <Typography variant={"h2"} className={"section-header"}>Experience</Typography>
+            <Typography variant={"h4"} className={"section-header"}>Experience</Typography>
             <Divider></Divider>
             <Grid container spacing={2}>
                 {/*Visualization*/}
