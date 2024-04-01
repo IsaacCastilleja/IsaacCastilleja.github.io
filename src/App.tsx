@@ -3,27 +3,21 @@ import './App.css';
 import AboutMe from "./Components/AboutMe";
 import Experience from "./Components/Experience";
 import Grid from "@mui/material/Unstable_Grid2";
-import {Box, Divider} from '@mui/material';
+import {Box} from '@mui/material';
 import { Me } from './Components/Me';
+import ResponsiveDivider from "./Components/ResponsiveDivider";
 
 function App() {
     return (
         <div className="App">
             <Grid container spacing={2} sx={{maxWidth: 'xl', mx: "auto", padding: "6rem"}}>
-                <Grid xs={4} sx={{padding: "1rem"}}>
+                <Grid md={4} sx={{padding: "1rem"}} xs={12}>
                     <Me></Me>
                 </Grid>
-                <Grid xs={1} sx={{padding: "1rem"}}>
-                    <Box justifyContent={"center"} alignItems={"center"} height={"100vh"} display={"flex"}>
-                        <Divider orientation={"vertical"}
-                                 sx={{
-                                     borderColor: "white",
-                                     borderRightWidth: "3px",
-                                 }}
-                        ></Divider>
-                    </Box>
+                <Grid md={1} sx={{padding: "1rem"}} xs={12}>
+                    <ResponsiveDivider></ResponsiveDivider>
                 </Grid>
-                <Grid xs={7} sx={{padding: "1rem"}}>
+                <Grid md={7} sx={{padding: "1rem"}} xs={12}>
                     <Box sx={{ height: '100vh' }}>
                         <AboutMe></AboutMe>
                         <Experience></Experience>
