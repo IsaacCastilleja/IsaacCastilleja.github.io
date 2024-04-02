@@ -14,9 +14,11 @@ const ResponsiveDivider = () => {
         >
             <Divider
                 orientation={isXsBreakpoint ? 'horizontal' : 'vertical'}
+                flexItem
                 sx={{
                     borderColor: "white",
-                    borderWidth: "3px"
+                    borderWidth: "3px",
+                    width: isXsBreakpoint ? '100%' : 'auto'
                 }}
             />
         </Box>

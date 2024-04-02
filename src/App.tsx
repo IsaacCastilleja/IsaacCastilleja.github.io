@@ -7,17 +7,24 @@ import {Box} from '@mui/material';
 import { Me } from './Components/Me';
 import ResponsiveDivider from "./Components/ResponsiveDivider";
 
+
 function App() {
     return (
         <div className="App">
-            <Grid container spacing={2} sx={{maxWidth: 'xl', mx: "auto", padding: "6rem"}}>
-                <Grid md={4} sx={{padding: "1rem"}} xs={12}>
+            <Grid container spacing={2}
+                  sx={{
+                      maxWidth: 'xl',
+                      mx: "auto",
+                      padding: {xs: "1rem", sm: "2rem", md: "3rem", lg: "4rem", xl:"5rem"},
+                  }}
+            >
+                <Grid xs={12} md={4} sx={{padding: "1rem"}}>
                     <Me></Me>
                 </Grid>
                 <Grid md={1} sx={{padding: "1rem"}} xs={12}>
                     <ResponsiveDivider></ResponsiveDivider>
                 </Grid>
-                <Grid md={7} sx={{padding: "1rem"}} xs={12}>
+                <Grid xs={12} md={7} sx={{padding: "1rem"}}>
                     <Box sx={{ height: '100vh' }}>
                         <AboutMe></AboutMe>
                         <Experience></Experience>

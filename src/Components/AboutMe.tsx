@@ -1,7 +1,10 @@
 import Box from "@mui/material/Box";
 import "../css/sections.css";
 import Typography from "@mui/material/Typography";
+import {useTheme} from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 export function AboutMe() {
+
     return (
         <Box>
             <Typography variant={"h3"}>About Me</Typography>
