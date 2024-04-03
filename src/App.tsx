@@ -7,14 +7,13 @@ import Container from "@mui/material/Container";
 import {Stack} from '@mui/material';
 import { Me } from './Components/Me';
 import ResponsiveDivider from "./Components/ResponsiveDivider";
+import Projects from "./Components/Projects";
 
 
 function App() {
     return (
         <Container maxWidth={'xl'} sx={{minHeight: "100vh"}}>
-            <Grid container spacing={2}
-
-            >
+            <Grid container spacing={2}>
                 <Grid xs={12} md={4}
                       sx={{
                           justifyContent: "space-between",
@@ -34,6 +33,7 @@ function App() {
                     <Stack rowGap={2}>
                         <AboutMe></AboutMe>
                         <Experience></Experience>
+                        <Projects></Projects>
                     </Stack>
                 </Grid>
 

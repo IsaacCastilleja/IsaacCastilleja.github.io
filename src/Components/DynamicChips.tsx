@@ -12,6 +12,7 @@ export function DynamicChips(skills: DynamicChipsProps) {
             display="flex"
             flexGrow={1}
             gap={2}
+            flexWrap={"wrap"}
         >
             {
                 skills.skills.map((skill, index) => {

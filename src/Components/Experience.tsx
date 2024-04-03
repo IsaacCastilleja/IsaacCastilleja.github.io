@@ -31,7 +31,7 @@ export function Experience() {
         <Box>
             <Typography variant={"h3"} className={"section-header"} paddingY={"1rem"}>Experience</Typography>
             <Divider></Divider>
-            <Stack direction={"column"}>
+            <Stack direction={"column"} rowGap={2}>
                 <ExperienceEntry props={fesEntry}></ExperienceEntry>
                 <ExperienceEntry props={fesInternEntry}></ExperienceEntry>
             </Stack>
