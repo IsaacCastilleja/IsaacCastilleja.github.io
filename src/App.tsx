@@ -21,15 +21,15 @@ function App() {
                           position: {md: "sticky", xs: "static"},
                           top: 0,
                           height: "100%",
-                          paddingY: "3rem"
+                          paddingY: "4rem"
                       }}
                 >
                     <Me></Me>
                 </Grid>
-                <Grid md={1} sx={{paddingY: {md: "3rem", xs:"0rem"}}} xs={12}>
+                <Grid md={1} sx={{paddingY: {md: "4rem", xs:"0rem"}}} xs={12}>
                     <ResponsiveDivider></ResponsiveDivider>
                 </Grid>
-                <Grid xs={12} md={7} sx={{paddingY: "3rem"}}>
+                <Grid xs={12} md={7} sx={{paddingY: "4rem"}}>
                     <Stack rowGap={2}>
                         <AboutMe></AboutMe>
                         <Experience></Experience>

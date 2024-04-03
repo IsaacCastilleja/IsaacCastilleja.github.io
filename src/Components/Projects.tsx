@@ -54,7 +54,7 @@ export function Projects() {
         ],
     }
     return (
-        <Box>
+        <Box id={"Projects"}>
             <Typography variant={"h3"} className={"section-header"} paddingY={"1rem"}>Projects</Typography>
             <Divider></Divider>
             <Stack direction={"column"} rowGap={2}>

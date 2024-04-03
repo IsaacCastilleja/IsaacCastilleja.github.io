@@ -28,7 +28,7 @@ export function Experience() {
             "good modernizing old, annoying LabView code into Python that could easily be read and maintained"
     }
     return (
-        <Box>
+        <Box id={"Experience"}>
             <Typography variant={"h3"} className={"section-header"} paddingY={"1rem"}>Experience</Typography>
             <Divider></Divider>
             <Stack direction={"column"} rowGap={2}>
