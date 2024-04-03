@@ -13,9 +13,7 @@ function App() {
     return (
         <Container maxWidth={'xl'} sx={{minHeight: "100vh"}}>
             <Grid container spacing={2}
-                  sx={{
-                      mx: "auto",
-                  }}
+
             >
                 <Grid xs={12} md={4}
                       sx={{
@@ -35,11 +33,6 @@ function App() {
                 <Grid xs={12} md={7} sx={{paddingY: "3rem"}}>
                     <Stack rowGap={2}>
                         <AboutMe></AboutMe>
-                        <AboutMe></AboutMe>
-                        <AboutMe></AboutMe>
-                        <AboutMe></AboutMe>
-                        <Experience></Experience>
-                        <Experience></Experience>
                         <Experience></Experience>
                     </Stack>
                 </Grid>

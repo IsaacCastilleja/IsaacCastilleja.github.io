@@ -8,7 +8,6 @@ export function Experience() {
         jobTitle: "Software Engineer I",
         company: "Frontier Electronic Systems",
         dates: "June 2023 - Present",
-        location: "Stillwater, OK",
         description: "Python developer. I liked making PyQt GUIs with Qt Designer at this job a lot. It felt really" +
             "good modernizing old, annoying LabView code into Python that could easily be read and maintained"
     }
@@ -16,7 +15,6 @@ export function Experience() {
         jobTitle: "Software Engineering Intern",
         company: "Frontier Electronic Systems",
         dates: "May 2022 - May 2023",
-        location: "Stillwater, OK",
         description: "Python developer. I liked making PyQt GUIs with Qt Designer at this job a lot. It felt really" +
             "good modernizing old, annoying LabView code into Python that could easily be read and maintained"
     }

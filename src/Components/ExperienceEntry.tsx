@@ -1,12 +1,12 @@
-import {Divider, Stack, Box, Typography} from "@mui/material";
+import {Divider, Stack, Box, Typography, Chip, Avatar} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-
+import QtLogo from "../assets/Qt_logo.png";
+import PythonLogo from "../assets/python-logo-only.png";
 export function ExperienceEntry({props}: {
     props: {
         jobTitle: string,
         company: string,
         dates: string,
-        location: string,
         description: string,
     }
     })
@@ -14,70 +14,77 @@ export function ExperienceEntry({props}: {
     return (
         <Stack direction={"column"}>
             <Grid container spacing={0} flexGrow={1}>
-                <Grid xs={7}>
+                <Grid xs={12}>
+                    <Typography
+                        variant={"subtitle2"}
+                        display={"flex"}
+                        flexGrow={1}
+                        height={1}
+                        sx={{
+                            fontFamily: "EB Garamond",
+                            fontSize: {xs: "1rem", sm: "1rem", md: "1.25rem"},
+                            fontStyle: "italic",
+                        }}
+                    >{props.dates}</Typography>
+                </Grid>
+                <Grid xs={12}>
                     <Typography
                         variant={"h5"}
                         display={"flex"}
                         flexGrow={1}
                         sx={{
                             fontFamily: "EB Garamond",
-                            fontSize: {xs: "1rem", sm: "1.5rem", md: "1.75rem"},
+                            fontSize: {xs: "1.25rem", sm: "1.5rem", md: "1.75rem"},
                             fontWeight: "bold",
                         }}
                     >{props.jobTitle}</Typography>
                 </Grid>
-                <Grid xs={5}>
-                    <Typography
-                        variant={"h5"}
-                        display={"flex"}
-                        flexGrow={1}
-                        flexDirection={"row-reverse"}
-                        height={1}
-                        alignItems={"end"}
-                        sx={{
-                            fontFamily: "EB Garamond",
-                            fontSize: {xs: "1rem", sm: "1.25rem", md: "1.5rem"},
-                        }}
-                    >{props.dates}</Typography>
-                </Grid>
-                <Grid xs={7}>
+                <Grid xs={12}>
                     <Typography
                         variant={"h5"}
                         display={"flex"}
                         flexGrow={1}
                         sx={{
                             fontFamily: "EB Garamond",
-                            fontSize: {xs: "1rem", sm: "1.25rem", md: "1.5rem"},
+                            fontSize: {xs: "1.25rem", sm: "1.5rem", md: "1.5rem"},
                         }}
                     >{props.company}</Typography>
                 </Grid>
-                <Grid xs={5}>
-                    <Typography
-                        variant={"h5"}
-                        display={"flex"}
-                        flexGrow={1}
-                        flexDirection={"row-reverse"}
-                        sx={{
-                            fontFamily: "EB Garamond",
-                            fontSize: {xs: "1rem", sm: "1.25rem", md: "1.5rem"},
-                        }}
-                    >{props.location}</Typography>
+                <Grid xs={12}>
+                    <Divider sx={{borderColor: "dimgrey", marginY: "5px"}}></Divider>
                 </Grid>
                 <Grid xs={12}   height={"min-content"}>
-                    <Typography variant={"body1"} className={"text-content"}>{props.description}</Typography>
+                    <Typography variant={"body1"} fontFamily={"EB Garamond"}>{props.description}</Typography>
                 </Grid>
+
             </Grid>
             {/*Visualization*/}
             <Stack
                 my={1}
+                direction={"row"}
                 display="flex"
                 flexGrow={1}
-                alignItems="center"
-                gap={4}
-                p={2}
-                sx={{ border: '2px solid grey' }}
+                gap={2}
             >
-                This Box uses MUI System props for quick customization.
+                <Chip
+                    avatar={<Avatar alt="Python" src={PythonLogo}/>}
+                    label="Python"
+                    sx={{
+                      color: "#ffffff",
+                      fontWeight: "bolder",
+                      background: "linear-gradient(to right, #0A39E8, #1595E8)"
+                    }}
+                />
+                <Chip
+                    avatar={<Avatar alt="Qt" src={QtLogo} />}
+                    label="Qt/PyQt"
+                    sx={{
+                        color: "#ffffff",
+                        fontWeight: "bolder",
+                        background: "linear-gradient(to right, #0A39E8, #1595E8)"
+                    }}
+                />
+
             </Stack>
 
         </Stack>

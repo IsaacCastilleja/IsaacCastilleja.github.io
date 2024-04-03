@@ -7,7 +7,7 @@ export function AboutMe() {
     return (
         <Box>
             <Typography variant={"h3"}>About Me</Typography>
-            <Typography variant={"body1"} className={"text-content"}>
+            <Typography variant={"body1"} fontFamily={"EB Garamond"}>
                 A friend once told me that once you agree to making a GUI, you become the "GUI guy."
                 He was right. After, developing my first real user interface-- A touchscreen display for our
                 autonomous vehicle senior design project-- I was hooked. There's nothing quite like typing
