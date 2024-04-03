@@ -1,13 +1,13 @@
 import {Divider, Stack, Typography, Chip, Avatar} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import QtLogo from "../assets/Qt_logo.png";
-import PythonLogo from "../assets/python-logo-only.png";
+import {DynamicChips} from "./DynamicChips";
 export function ExperienceEntry({props}: {
     props: {
         jobTitle: string,
         company: string,
         dates: string,
         description: string,
+        skills: {logo: string, name: string}[]
     }
     })
 {
@@ -58,35 +58,7 @@ export function ExperienceEntry({props}: {
                 </Grid>
 
             </Grid>
-            {/*Visualization*/}
-            <Stack
-                my={1}
-                direction={"row"}
-                display="flex"
-                flexGrow={1}
-                gap={2}
-            >
-                <Chip
-                    avatar={<Avatar alt="Python" src={PythonLogo}/>}
-                    label="Python"
-                    sx={{
-                      color: "#ffffff",
-                      fontWeight: "bolder",
-                      background: "linear-gradient(to right, #0A39E8, #1595E8)"
-                    }}
-                />
-                <Chip
-                    avatar={<Avatar alt="Qt" src={QtLogo} />}
-                    label="Qt/PyQt"
-                    sx={{
-                        color: "#ffffff",
-                        fontWeight: "bolder",
-                        background: "linear-gradient(to right, #0A39E8, #1595E8)"
-                    }}
-                />
-
-            </Stack>
-
+            <DynamicChips skills={props.skills}></DynamicChips>
         </Stack>
     );
 }
