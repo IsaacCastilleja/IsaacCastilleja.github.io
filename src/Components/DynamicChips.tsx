@@ -14,9 +14,10 @@ export function DynamicChips(skills: DynamicChipsProps) {
             gap={2}
         >
             {
-                skills.skills.map((skill) => {
+                skills.skills.map((skill, index) => {
                     return (
                         <Chip
+                            key={index}
                             avatar={<Avatar alt={skill.name} src={skill.logo}/>}
                             label={skill.name}
                             sx={{

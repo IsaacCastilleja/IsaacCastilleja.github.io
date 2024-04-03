@@ -1,4 +1,4 @@
-import {Divider, Stack, Typography, Chip, Avatar} from "@mui/material";
+import {Divider, Stack, Typography} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import {DynamicChips} from "./DynamicChips";
 export function ExperienceEntry({props}: {
