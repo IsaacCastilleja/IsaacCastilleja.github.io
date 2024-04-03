@@ -9,8 +9,8 @@ export function Me() {
     const isXsBreakpoint = useMediaQuery(theme.breakpoints.down('md'));
     const isMdBreakpoint = useMediaQuery(theme.breakpoints.down('lg'));
     return (
-        <Stack sx={{ flexGrow: 1, position: isXsBreakpoint ? "static" : "fixed"}}>
-            <Typography variant={(isMdBreakpoint && !isXsBreakpoint) ? "h3" : "h2"} overflow={"break-word"}>Isaac Castilleja</Typography>
+        <Stack>
+            <Typography variant={(isMdBreakpoint && !isXsBreakpoint) ? "h3" : "h2"}>Isaac Castilleja</Typography>
             <Typography variant={"h4"}>Software Engineer</Typography>
         </Stack>
     );

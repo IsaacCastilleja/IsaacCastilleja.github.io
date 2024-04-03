@@ -3,39 +3,50 @@ import './App.css';
 import AboutMe from "./Components/AboutMe";
 import Experience from "./Components/Experience";
 import Grid from "@mui/material/Unstable_Grid2";
-import {Box} from '@mui/material';
+import Container from "@mui/material/Container";
+import {Stack} from '@mui/material';
 import { Me } from './Components/Me';
 import ResponsiveDivider from "./Components/ResponsiveDivider";
 
 
 function App() {
     return (
-        <div className="App">
+        <Container maxWidth={'xl'} sx={{minHeight: "100vh"}}>
             <Grid container spacing={2}
                   sx={{
-                      maxWidth: 'xl',
                       mx: "auto",
-                      padding: {xs: "1rem", sm: "2rem", md: "3rem", lg: "4rem", xl:"5rem"},
                   }}
             >
-                <Grid xs={12} md={4} sx={{padding: "1rem"}}>
+                <Grid xs={12} md={4}
+                      sx={{
+                          justifyContent: "space-between",
+                          display: "flex",
+                          position: {md: "sticky", xs: "static"},
+                          top: 0,
+                          height: "100%",
+                          paddingY: "3rem"
+                      }}
+                >
                     <Me></Me>
                 </Grid>
-                <Grid md={1} sx={{padding: "1rem"}} xs={12}>
+                <Grid md={1} sx={{paddingY: {md: "3rem", xs:"0rem"}}} xs={12}>
                     <ResponsiveDivider></ResponsiveDivider>
                 </Grid>
-                <Grid xs={12} md={7} sx={{padding: "1rem"}}>
-                    <Box sx={{ height: '100vh' }}>
+                <Grid xs={12} md={7} sx={{paddingY: "3rem"}}>
+                    <Stack>
+                        <AboutMe></AboutMe>
+                        <AboutMe></AboutMe>
+                        <AboutMe></AboutMe>
                         <AboutMe></AboutMe>
                         <Experience></Experience>
                         <Experience></Experience>
                         <Experience></Experience>
-                    </Box>
+                    </Stack>
                 </Grid>
 
             </Grid>
 
-        </div>
+        </Container>
     );
 }
 
