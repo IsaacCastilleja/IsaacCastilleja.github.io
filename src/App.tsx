@@ -4,7 +4,7 @@ import AboutMe from "./Components/AboutMe";
 import Experience from "./Components/Experience";
 import Grid from "@mui/material/Unstable_Grid2";
 import Container from "@mui/material/Container";
-import {Divider, Stack} from '@mui/material';
+import {Stack} from '@mui/material';
 import { Me } from './Components/Me';
 import ResponsiveDivider from "./Components/ResponsiveDivider";
 

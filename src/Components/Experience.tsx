@@ -1,5 +1,4 @@
 import {Divider, Stack, Box} from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
 import "../css/sections.css";
 import Typography from "@mui/material/Typography";
 import {ExperienceEntry} from "./ExperienceEntry";

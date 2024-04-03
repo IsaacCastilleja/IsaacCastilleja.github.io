@@ -1,4 +1,4 @@
-import {Divider, Stack, Box, Typography, Chip, Avatar} from "@mui/material";
+import {Divider, Stack, Typography, Chip, Avatar} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import QtLogo from "../assets/Qt_logo.png";
 import PythonLogo from "../assets/python-logo-only.png";
