@@ -4,7 +4,7 @@ import AboutMe from "./Components/AboutMe";
 import Experience from "./Components/Experience";
 import Grid from "@mui/material/Unstable_Grid2";
 import Container from "@mui/material/Container";
-import {Stack} from '@mui/material';
+import {Divider, Stack} from '@mui/material';
 import { Me } from './Components/Me';
 import ResponsiveDivider from "./Components/ResponsiveDivider";
 
@@ -33,7 +33,7 @@ function App() {
                     <ResponsiveDivider></ResponsiveDivider>
                 </Grid>
                 <Grid xs={12} md={7} sx={{paddingY: "3rem"}}>
-                    <Stack>
+                    <Stack rowGap={2}>
                         <AboutMe></AboutMe>
                         <AboutMe></AboutMe>
                         <AboutMe></AboutMe>

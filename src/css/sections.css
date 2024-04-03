@@ -8,5 +8,9 @@
 
 .time-range {
     text-align: end;
+}
 
+.experience-title {
+    font-family: "EB Garamond", serif;
+    font-size: 36px;
 }
