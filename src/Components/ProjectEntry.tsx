@@ -51,8 +51,10 @@ export function ProjectEntry({props}: {
                         display={"flex"}
                         flex={1} flexGrow={1}
                         minHeight={"128px"}
+                        width={1}
                         justifyContent={"center"}
                         alignItems={"center"}
+                        my={"1rem"}
                         alt={"Project Demo"}
                         src={props.demo}
                     >

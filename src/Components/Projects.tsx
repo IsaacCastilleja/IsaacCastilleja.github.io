@@ -3,6 +3,7 @@ import "../css/sections.css";
 import Typography from "@mui/material/Typography";
 import QtLogo from "../assets/Qt_logo.png";
 import PythonLogo from "../assets/python-logo-only.png";
+import igvcGUI from "../assets/demos/igvcGUI.gif";
 import {ProjectEntry} from "./ProjectEntry";
 
 export function Projects() {
@@ -10,7 +11,7 @@ export function Projects() {
         name: "Custom Dashboard for Autonomous Vehicle",
         dates: "June 2023 - Present",
         description: "GUI for the dashboard of an autonomous vehicle for the Intelligent Ground Vehicle Competition",
-        demo: "",
+        demo: `${igvcGUI}`,
         skills: [
             {logo: "J", name: "JavaScript"},
             {logo: "E", name: "Electron"},
@@ -45,7 +46,7 @@ export function Projects() {
     const courseFinder = {
         name: "College Course Finder",
         dates: "May 2021",
-        description: "Web scraper to find and filter courses based on user-selected criteria of course attributes," +
+        description: "Web scraper to find and filter courses based on user-selected criteria of course attributes, " +
             "level, and prerequisites to make degree planning easier",
         demo: "",
         skills: [

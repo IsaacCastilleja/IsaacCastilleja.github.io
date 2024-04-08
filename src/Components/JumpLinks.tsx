@@ -9,7 +9,7 @@ function JumpLink(section: section) {
     return (
         <Link
             href={`#${section.name.replaceAll(" ", "")}`}
-            width={0.5}
+            width={0.6}
             className={"jump-link"}
             underline={"none"}
             color={"white"}

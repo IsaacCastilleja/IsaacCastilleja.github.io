@@ -8,7 +8,7 @@ import {Stack} from '@mui/material';
 import { Me } from './Components/Me';
 import ResponsiveDivider from "./Components/ResponsiveDivider";
 import Projects from "./Components/Projects";
-
+import { InView } from 'react-intersection-observer';
 
 function App() {
     return (
