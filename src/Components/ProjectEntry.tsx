@@ -7,6 +7,7 @@ export function ProjectEntry({props}: {
         dates: string,
         description: string,
         demo: string,
+        demoType: string,
         skills: {logo: string, name: string}[],
     }
 })
@@ -46,19 +47,36 @@ export function ProjectEntry({props}: {
                     <Typography variant={"body1"} fontFamily={"EB Garamond"}>{props.description}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                    <Box
-                        component={"img"}
-                        display={"flex"}
-                        flex={1} flexGrow={1}
-                        minHeight={"128px"}
-                        width={1}
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        my={"1rem"}
-                        alt={"Project Demo"}
-                        src={props.demo}
-                    >
-                    </Box>
+                    {props.demoType === "video" ? (
+                        <Box
+                            display={"flex"}
+                            flex={1} flexGrow={1}
+                            minHeight={"128px"}
+                            width={1}
+                            justifyContent={"center"}
+                            alignItems={"center"}
+                            my={"1rem"}
+                        >
+                            <video height={"100%"} width={"100%"} controls preload={"auto"}>
+                                <source src={props.demo} type={"video/ogg"}/>
+                            </video>
+                        </Box>
+
+                    ) : (
+                        <Box
+                            component={"img"}
+                            display={"flex"}
+                            flex={1} flexGrow={1}
+                            minHeight={"128px"}
+                            width={1}
+                            justifyContent={"center"}
+                            alignItems={"center"}
+                            my={"1rem"}
+                            src={props.demo}
+                            alt={"project demo"}
+                        >
+                        </Box>
+                    )}
                 </Grid>
             </Grid>
             <DynamicChips skills={props.skills}></DynamicChips>

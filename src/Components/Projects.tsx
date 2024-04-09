@@ -4,6 +4,8 @@ import Typography from "@mui/material/Typography";
 import QtLogo from "../assets/Qt_logo.png";
 import PythonLogo from "../assets/python-logo-only.png";
 import igvcGUI from "../assets/demos/igvcGUI.gif";
+import wordsearch from "../assets/demos/wordsearch_demo.gif";
+import muse from "../assets/demos/museDemo.ogv";
 import {ProjectEntry} from "./ProjectEntry";
 
 export function Projects() {
@@ -12,6 +14,7 @@ export function Projects() {
         dates: "June 2023 - Present",
         description: "GUI for the dashboard of an autonomous vehicle for the Intelligent Ground Vehicle Competition",
         demo: `${igvcGUI}`,
+        demoType: "image",
         skills: [
             {logo: "J", name: "JavaScript"},
             {logo: "E", name: "Electron"},
@@ -22,8 +25,9 @@ export function Projects() {
     const songGuesser = {
         name: "Song Guessing Application",
         dates: "Dec 2023 - Mar 2024",
-        demo: "",
+        demo: `${muse}`,
         description: "Guess the song game that utilizes the Spotify API to let users use their own playlists",
+        demoType: "video",
         skills: [
             {logo: "R", name: "Rust"},
             {logo: "V", name: "Vue"},
@@ -36,7 +40,8 @@ export function Projects() {
         name: "Word Search Solver",
         dates: "September 2023",
         description: "Word search solving visualized with animations",
-        demo: "",
+        demo: `${wordsearch}`,
+        demoType: "image",
         skills: [
             {logo: "R", name: "Rust"},
             {logo: "V", name: "Vue"},
@@ -49,6 +54,7 @@ export function Projects() {
         description: "Web scraper to find and filter courses based on user-selected criteria of course attributes, " +
             "level, and prerequisites to make degree planning easier",
         demo: "",
+        demoType: "image",
         skills: [
             {logo: PythonLogo, name: "Python"},
             {logo: QtLogo, name: "Qt/PyQt"},
