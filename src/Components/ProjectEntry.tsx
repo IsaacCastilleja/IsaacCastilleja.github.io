@@ -55,6 +55,8 @@ export function ProjectEntry({props}: {
                             width={1}
                             justifyContent={"center"}
                             alignItems={"center"}
+                            border={"3px solid dimgrey"}
+                            borderRadius={"3px"}
                             my={"1rem"}
                         >
                             <video height={"100%"} width={"100%"} controls preload={"auto"}>
@@ -72,6 +74,8 @@ export function ProjectEntry({props}: {
                             justifyContent={"center"}
                             alignItems={"center"}
                             my={"1rem"}
+                            border={"3px solid dimgrey"}
+                            borderRadius={"3px"}
                             src={props.demo}
                             alt={"project demo"}
                         >

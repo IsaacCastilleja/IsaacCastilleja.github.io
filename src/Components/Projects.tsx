@@ -11,7 +11,7 @@ import {ProjectEntry} from "./ProjectEntry";
 export function Projects() {
     const dashboard = {
         name: "Custom Dashboard for Autonomous Vehicle",
-        dates: "June 2023 - Present",
+        dates: "Jan 2023 - Jun 2023",
         description: "GUI for the dashboard of an autonomous vehicle for the Intelligent Ground Vehicle Competition",
         demo: `${igvcGUI}`,
         demoType: "image",
@@ -20,6 +20,18 @@ export function Projects() {
             {logo: "E", name: "Electron"},
             {logo: "B", name: "Bootstrap"},
             {logo: "R", name: "ROS"},
+        ],
+    }
+    const website = {
+        name: "Portfolio Website",
+        dates: "Apr 2023 - Present",
+        description: "Custom website to showcase my projects and experience",
+        demo: ``,
+        demoType: "image",
+        skills: [
+            {logo: "J", name: "JavaScript"},
+            {logo: "R", name: "React"},
+            {logo: "M", name: "MaterialUI"},
         ],
     }
     const songGuesser = {
@@ -66,6 +78,7 @@ export function Projects() {
             <Divider></Divider>
             <Stack direction={"column"} rowGap={2}>
                 <ProjectEntry props={dashboard}></ProjectEntry>
+                <ProjectEntry props={website}></ProjectEntry>
                 <ProjectEntry props={songGuesser}></ProjectEntry>
                 <ProjectEntry props={wordSearch}></ProjectEntry>
                 <ProjectEntry props={courseFinder}></ProjectEntry>

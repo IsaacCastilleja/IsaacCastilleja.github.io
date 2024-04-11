@@ -13,7 +13,9 @@ export function Me() {
         <Stack>
             <Typography variant={(isMdBreakpoint && !isXsBreakpoint) ? "h3" : "h2"}>Isaac Castilleja</Typography>
             <Typography variant={"h4"}>Software Engineer</Typography>
-            <Typography variant={"h6"} fontFamily={"EB Garamond"}>Someone's gotta do it</Typography>
+            <Typography variant={"h6"} fontFamily={"EB Garamond"}>
+                100 wpm btw
+            </Typography>
             <JumpLinks></JumpLinks>
         </Stack>
     );

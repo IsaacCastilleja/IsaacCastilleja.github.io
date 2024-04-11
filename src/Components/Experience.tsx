@@ -14,8 +14,8 @@ export function Experience() {
             {logo: PythonLogo, name: "Python"},
             {logo: QtLogo, name: "Qt/PyQt"},
         ],
-        description: "Python developer. I liked making PyQt GUIs with Qt Designer at this job a lot. It felt really" +
-            "good modernizing old, annoying LabView code into Python that could easily be read and maintained"
+        description: "Redesigned legacy software that used wxPython and Python2 to instead use Python3 and PyQt6," +
+            " making it much more performant and easier to read and maintain."
     }
     const fesInternEntry = {
         jobTitle: "Software Engineering Intern",
@@ -24,8 +24,8 @@ export function Experience() {
         skills: [
             {logo: PythonLogo, name: "Python"},
         ],
-        description: "Python developer. I liked making PyQt GUIs with Qt Designer at this job a lot. It felt really" +
-            "good modernizing old, annoying LabView code into Python that could easily be read and maintained"
+        description: "Rebuilt legacy LabView in-house testing software with use Python3 and PyQt6 for compatability" +
+            " and maintainability"
     }
     return (
         <Box id={"Experience"}>
