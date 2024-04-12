@@ -6,6 +6,7 @@ import PythonLogo from "../assets/python-logo-only.png";
 import igvcGUI from "../assets/demos/igvcGUI.gif";
 import wordsearch from "../assets/demos/wordsearch_demo.gif";
 import muse from "../assets/demos/museDemo.ogv";
+import portfolio from "../assets/demos/portfolioWebsite.png";
 import {ProjectEntry} from "./ProjectEntry";
 
 export function Projects() {
@@ -13,7 +14,7 @@ export function Projects() {
         name: "Custom Dashboard for Autonomous Vehicle",
         dates: "Jan 2023 - Jun 2023",
         description: "GUI for the dashboard of an autonomous vehicle for the Intelligent Ground Vehicle Competition",
-        demo: `${igvcGUI}`,
+        demo: igvcGUI,
         demoType: "image",
         skills: [
             {logo: "J", name: "JavaScript"},
@@ -26,10 +27,10 @@ export function Projects() {
         name: "Portfolio Website",
         dates: "Apr 2023 - Present",
         description: "Custom website to showcase my projects and experience",
-        demo: ``,
+        demo: portfolio,
         demoType: "image",
         skills: [
-            {logo: "J", name: "JavaScript"},
+            {logo: "T", name: "TypeScript"},
             {logo: "R", name: "React"},
             {logo: "M", name: "MaterialUI"},
         ],
@@ -37,7 +38,7 @@ export function Projects() {
     const songGuesser = {
         name: "Song Guessing Application",
         dates: "Dec 2023 - Mar 2024",
-        demo: `${muse}`,
+        demo: muse,
         description: "Guess the song game that utilizes the Spotify API to let users use their own playlists",
         demoType: "video",
         skills: [
@@ -52,7 +53,7 @@ export function Projects() {
         name: "Word Search Solver",
         dates: "September 2023",
         description: "Word search solving visualized with animations",
-        demo: `${wordsearch}`,
+        demo: wordsearch,
         demoType: "image",
         skills: [
             {logo: "R", name: "Rust"},
@@ -81,7 +82,7 @@ export function Projects() {
                 <ProjectEntry props={website}></ProjectEntry>
                 <ProjectEntry props={songGuesser}></ProjectEntry>
                 <ProjectEntry props={wordSearch}></ProjectEntry>
-                <ProjectEntry props={courseFinder}></ProjectEntry>
+                {/*<ProjectEntry props={courseFinder}></ProjectEntry>*/}
             </Stack>
         </Box>
 
