@@ -54,7 +54,7 @@ export function ExperienceEntry({props}: {
                     <Divider sx={{borderColor: "dimgrey", marginY: "5px"}}></Divider>
                 </Grid>
                 <Grid xs={12}   height={"min-content"}>
-                    <Typography variant={"body1"} fontFamily={"EB Garamond"}>{props.description}</Typography>
+                    <Typography variant={"body1"} fontSize={"1.15rem"} fontFamily={"EB Garamond"}>{props.description}</Typography>
                 </Grid>
 
             </Grid>

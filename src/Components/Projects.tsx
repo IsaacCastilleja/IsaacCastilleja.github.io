@@ -3,6 +3,17 @@ import "../css/sections.css";
 import Typography from "@mui/material/Typography";
 import QtLogo from "../assets/Qt_logo.png";
 import PythonLogo from "../assets/python-logo-only.png";
+import Bootstrap from "../assets/Bootstrap.png";
+import Electron from "../assets/Electron.png";
+import JavaScript from "../assets/JavaScript.png";
+import Spotify from "../assets/spotify.png";
+import Tauri from "../assets/tauri.png";
+import Vue from "../assets/Vue.png";
+import Typescript from "../assets/Typescript.png";
+import Rust from "../assets/rust.jpg";
+import ROS from "../assets/ROS.png";
+import ReactLogo from "../assets/react.png";
+import MaterialUILogo from "../assets/material-ui.svg";
 import igvcGUI from "../assets/demos/igvcGUI.gif";
 import wordsearch from "../assets/demos/wordsearch_demo.gif";
 import muse from "../assets/demos/museDemo.ogv";
@@ -17,10 +28,10 @@ export function Projects() {
         demo: igvcGUI,
         demoType: "image",
         skills: [
-            {logo: "J", name: "JavaScript"},
-            {logo: "E", name: "Electron"},
-            {logo: "B", name: "Bootstrap"},
-            {logo: "R", name: "ROS"},
+            {logo: JavaScript, name: "JavaScript"},
+            {logo: Electron, name: "Electron"},
+            {logo: Bootstrap, name: "Bootstrap"},
+            {logo: ROS, name: "ROS"},
         ],
     }
     const website = {
@@ -30,9 +41,9 @@ export function Projects() {
         demo: portfolio,
         demoType: "image",
         skills: [
-            {logo: "T", name: "TypeScript"},
-            {logo: "R", name: "React"},
-            {logo: "M", name: "MaterialUI"},
+            {logo: Typescript, name: "TypeScript"},
+            {logo: ReactLogo, name: "React"},
+            {logo: MaterialUILogo, name: "MaterialUI"},
         ],
     }
     const songGuesser = {
@@ -42,11 +53,11 @@ export function Projects() {
         description: "Guess the song game that utilizes the Spotify API to let users use their own playlists",
         demoType: "video",
         skills: [
-            {logo: "R", name: "Rust"},
-            {logo: "V", name: "Vue"},
-            {logo: "B", name: "Bootstrap"},
-            {logo: "T", name: "Tauri"},
-            {logo: "S", name: "Spotify API"}
+            {logo: Rust, name: "Rust"},
+            {logo: Vue, name: "Vue"},
+            {logo: Bootstrap, name: "Bootstrap"},
+            {logo: Tauri, name: "Tauri"},
+            {logo: Spotify, name: "Spotify API"}
         ],
     }
     const wordSearch = {
@@ -56,9 +67,9 @@ export function Projects() {
         demo: wordsearch,
         demoType: "image",
         skills: [
-            {logo: "R", name: "Rust"},
-            {logo: "V", name: "Vue"},
-            {logo: "T", name: "Tauri"}
+            {logo: Rust, name: "Rust"},
+            {logo: Vue, name: "Vue"},
+            {logo: Tauri, name: "Tauri"}
         ],
     }
     const courseFinder = {

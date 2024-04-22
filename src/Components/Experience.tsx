@@ -23,6 +23,7 @@ export function Experience() {
         dates: "May 2022 - May 2023",
         skills: [
             {logo: PythonLogo, name: "Python"},
+            {logo: QtLogo, name: "Qt/PyQt"},
         ],
         description: "Rebuilt legacy LabView in-house testing software with use Python3 and PyQt6 for compatability" +
             " and maintainability"

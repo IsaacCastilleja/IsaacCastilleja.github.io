@@ -14,7 +14,7 @@ export function Me() {
             <Typography variant={(isMdBreakpoint && !isXsBreakpoint) ? "h3" : "h2"}>Isaac Castilleja</Typography>
             <Typography variant={"h4"}>Software Engineer</Typography>
             <Typography variant={"h6"} fontFamily={"EB Garamond"}>
-                I don't just solve problems; I visualize them.
+            I craft visual solutions for complex problems
             </Typography>
             <JumpLinks></JumpLinks>
         </Stack>

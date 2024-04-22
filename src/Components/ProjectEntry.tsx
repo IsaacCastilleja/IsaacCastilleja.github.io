@@ -44,7 +44,7 @@ export function ProjectEntry({props}: {
                     <Divider sx={{borderColor: "dimgrey", marginY: "5px"}}></Divider>
                 </Grid>
                 <Grid xs={12}   height={"min-content"}>
-                    <Typography variant={"body1"} fontFamily={"EB Garamond"}>{props.description}</Typography>
+                    <Typography variant={"body1"} fontFamily={"EB Garamond"} fontSize={"1.15rem"}>{props.description}</Typography>
                 </Grid>
                 <Grid xs={12}>
                     {props.demoType === "video" ? (
