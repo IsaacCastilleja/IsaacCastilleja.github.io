@@ -15,6 +15,7 @@ import MaterialUILogo from "../assets/material-ui.svg";
 import igvcGUI from "../assets/demos/igvcGUI.gif";
 import wordsearch from "../assets/demos/wordsearch_demo.gif";
 import muse from "../assets/demos/museDemo.mp4";
+import museAlt from "../assets/demos/museDemoApple.mp4";
 import portfolio from "../assets/demos/portfolioWebsite.png";
 import {ProjectEntry} from "./ProjectEntry";
 
@@ -24,6 +25,7 @@ export function Projects() {
         dates: "Jan 2023 - Jun 2023",
         description: "GUI for the dashboard of an autonomous vehicle for the Intelligent Ground Vehicle Competition",
         demo: igvcGUI,
+        demoAlt: "",
         demoType: "image",
         skills: [
             {logo: JavaScript, name: "JavaScript"},
@@ -37,6 +39,7 @@ export function Projects() {
         dates: "Apr 2023 - Present",
         description: "Custom website to showcase my projects and experience",
         demo: portfolio,
+        demoAlt: "",
         demoType: "image",
         skills: [
             {logo: Typescript, name: "TypeScript"},
@@ -48,6 +51,7 @@ export function Projects() {
         name: "Song Guessing Application",
         dates: "Dec 2023 - Mar 2024",
         demo: muse,
+        demoAlt: museAlt,
         description: "Guess the song game that utilizes the Spotify API to let users use their own playlists",
         demoType: "video",
         skills: [
@@ -63,6 +67,7 @@ export function Projects() {
         dates: "September 2023",
         description: "Word search solving visualized with animations",
         demo: wordsearch,
+        demoAlt: "",
         demoType: "image",
         skills: [
             {logo: Rust, name: "Rust"},

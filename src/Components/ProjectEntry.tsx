@@ -3,6 +3,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import {DynamicChips} from "./DynamicChips";
 export function ProjectEntry({props}: {
     props: {
+        demoAlt: string | undefined;
         name: string,
         dates: string,
         description: string,
@@ -59,7 +60,8 @@ export function ProjectEntry({props}: {
                             borderRadius={"3px"}
                             my={"1rem"}
                         >
-                            <video height={"100%"} width={"100%"} controls preload={"auto"} playsInline>
+                            <video height={"100%"} width={"100%"} controls preload={"auto"}>
+                                <source src={props.demoAlt} type="video/x-m4v"/>
                                 <source src={props.demo} type={"video/mp4"}/>
                             </video>
                         </Box>
