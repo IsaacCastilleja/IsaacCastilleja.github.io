@@ -59,7 +59,7 @@ export function ProjectEntry({props}: {
                             borderRadius={"3px"}
                             my={"1rem"}
                         >
-                            <video height={"100%"} width={"100%"} controls preload={"auto"}>
+                            <video height={"100%"} width={"100%"} controls preload={"auto"} playsInline>
                                 <source src={props.demo} type={"video/ogg"}/>
                             </video>
                         </Box>
