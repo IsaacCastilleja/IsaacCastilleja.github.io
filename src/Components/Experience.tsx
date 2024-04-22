@@ -15,7 +15,7 @@ export function Experience() {
             {logo: QtLogo, name: "Qt/PyQt"},
         ],
         description: "Redesigned legacy software that used wxPython and Python2 to instead use Python3 and PyQt6," +
-            " making it much more performant and easier to read and maintain."
+            " making it much more performant and easier to read and maintain"
     }
     const fesInternEntry = {
         jobTitle: "Software Engineering Intern",
