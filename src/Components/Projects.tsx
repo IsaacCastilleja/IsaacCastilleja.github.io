@@ -1,8 +1,6 @@
 import {Divider, Stack, Box} from "@mui/material";
 import "../css/sections.css";
 import Typography from "@mui/material/Typography";
-import QtLogo from "../assets/Qt_logo.png";
-import PythonLogo from "../assets/python-logo-only.png";
 import Bootstrap from "../assets/Bootstrap.png";
 import Electron from "../assets/Electron.png";
 import JavaScript from "../assets/JavaScript.png";
@@ -16,7 +14,7 @@ import ReactLogo from "../assets/react.png";
 import MaterialUILogo from "../assets/material-ui.svg";
 import igvcGUI from "../assets/demos/igvcGUI.gif";
 import wordsearch from "../assets/demos/wordsearch_demo.gif";
-import muse from "../assets/demos/museDemo.ogv";
+import muse from "../assets/demos/museDemo.mp4";
 import portfolio from "../assets/demos/portfolioWebsite.png";
 import {ProjectEntry} from "./ProjectEntry";
 
@@ -72,18 +70,6 @@ export function Projects() {
             {logo: Tauri, name: "Tauri"}
         ],
     }
-    const courseFinder = {
-        name: "College Course Finder",
-        dates: "May 2021",
-        description: "Web scraper to find and filter courses based on user-selected criteria of course attributes, " +
-            "level, and prerequisites to make degree planning easier",
-        demo: "",
-        demoType: "image",
-        skills: [
-            {logo: PythonLogo, name: "Python"},
-            {logo: QtLogo, name: "Qt/PyQt"},
-        ],
-    }
     return (
         <Box id={"Projects"}>
             <Typography variant={"h3"} className={"section-header"} paddingY={"1rem"}>Projects</Typography>
@@ -93,7 +79,6 @@ export function Projects() {
                 <ProjectEntry props={website}></ProjectEntry>
                 <ProjectEntry props={songGuesser}></ProjectEntry>
                 <ProjectEntry props={wordSearch}></ProjectEntry>
-                {/*<ProjectEntry props={courseFinder}></ProjectEntry>*/}
             </Stack>
         </Box>
 
