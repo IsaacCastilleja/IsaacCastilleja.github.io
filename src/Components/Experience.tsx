@@ -9,7 +9,7 @@ export function Experience() {
     const fesEntry = {
         jobTitle: "Software Engineer I",
         company: "Frontier Electronic Systems",
-        dates: "June 2023 - Present",
+        dates: "June 2023 - May 2024",
         skills: [
             {logo: PythonLogo, name: "Python"},
             {logo: QtLogo, name: "Qt/PyQt"},
