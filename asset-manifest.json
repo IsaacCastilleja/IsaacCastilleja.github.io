@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0be39092.css",
-    "main.js": "/static/js/main.5bf08062.js",
+    "main.css": "/static/css/main.ccd58915.css",
+    "main.js": "/static/js/main.036833a8.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
-    "static/js/780.6616874b.chunk.js": "/static/js/780.6616874b.chunk.js",
-    "static/js/431.2b6c15f8.chunk.js": "/static/js/431.2b6c15f8.chunk.js",
+    "static/js/780.1ea8ffac.chunk.js": "/static/js/780.1ea8ffac.chunk.js",
+    "static/js/499.f53250f7.chunk.js": "/static/js/499.f53250f7.chunk.js",
     "static/media/igvcGUI.gif": "/static/media/igvcGUI.15164db91957841020e0.gif",
     "static/media/museDemoApple.mp4": "/static/media/museDemoApple.e0d7d6325773cc96c1b2.mp4",
     "static/media/museDemo.mp4": "/static/media/museDemo.a42092f248b2fdc6a0eb.mp4",
@@ -24,10 +24,10 @@
     "static/media/Electron.png": "/static/media/Electron.8ba8191e8a30aa10de9c.png",
     "static/media/Vue.png": "/static/media/Vue.b49a21991c025954d4da.png",
     "static/media/eb-garamond-cyrillic-ext-400-normal.woff2": "/static/media/eb-garamond-cyrillic-ext-400-normal.5b036a7ddcf6afa16f0b.woff2",
-    "static/media/eb-garamond-cyrillic-400-normal.woff": "/static/media/eb-garamond-cyrillic-400-normal.c1d6f379a1bd237607b5.woff",
+    "static/media/eb-garamond-cyrillic-400-normal.woff": "/static/media/eb-garamond-cyrillic-400-normal.149e2e0bc8d4a6e61af6.woff",
     "static/media/Qt_logo.png": "/static/media/Qt_logo.1d6cc7984fcba25eff30.png",
     "static/media/eb-garamond-cyrillic-400-normal.woff2": "/static/media/eb-garamond-cyrillic-400-normal.32b2ef4ae6712bbd79a0.woff2",
-    "static/media/eb-garamond-greek-400-normal.woff": "/static/media/eb-garamond-greek-400-normal.121275a47a486236eb21.woff",
+    "static/media/eb-garamond-greek-400-normal.woff": "/static/media/eb-garamond-greek-400-normal.06c51a7c6c54bc9aa1b6.woff",
     "static/media/eb-garamond-greek-400-normal.woff2": "/static/media/eb-garamond-greek-400-normal.5e7a24cbd0f9eaefd8d7.woff2",
     "static/media/JavaScript.png": "/static/media/JavaScript.266bd9fb2663dcc057b4.png",
     "static/media/eb-garamond-greek-ext-400-normal.woff": "/static/media/eb-garamond-greek-ext-400-normal.bbe85480d62deee800b2.woff",
@@ -37,14 +37,14 @@
     "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/index.html",
     "static/media/material-ui.svg": "/static/media/material-ui.fd510ed8518b192069590b04e2e6348a.svg",
-    "main.0be39092.css.map": "/static/css/main.0be39092.css.map",
-    "main.5bf08062.js.map": "/static/js/main.5bf08062.js.map",
+    "main.ccd58915.css.map": "/static/css/main.ccd58915.css.map",
+    "main.036833a8.js.map": "/static/js/main.036833a8.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map",
-    "780.6616874b.chunk.js.map": "/static/js/780.6616874b.chunk.js.map",
-    "431.2b6c15f8.chunk.js.map": "/static/js/431.2b6c15f8.chunk.js.map"
+    "780.1ea8ffac.chunk.js.map": "/static/js/780.1ea8ffac.chunk.js.map",
+    "499.f53250f7.chunk.js.map": "/static/js/499.f53250f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0be39092.css",
-    "static/js/main.5bf08062.js"
+    "static/css/main.ccd58915.css",
+    "static/js/main.036833a8.js"
   ]
 }
