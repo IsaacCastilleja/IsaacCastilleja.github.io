@@ -12,13 +12,13 @@ export function AboutMe() {
                 When I started, I had coding experience but none at all with JavaScript or front-end development.
                 Then I was given the task to create a touchscreen GUI for the dashboard of an autonomous vehicle
                 completely from scratch, in just a single semester. Once I figured out what I was doing, I was hooked.
-                Since then I've made multiple personal projects, a Spotify guess the song game, word search solver,
-                and this very website.
+                Since then I've made multiple personal projects, including a daily browser game and a song guessing game.
+                Each new project just leads to more excitement on what I could work on next.
                 <br/>
                 <br/>
-                In my free time, I’m often found working on various projects with my friends or playing
-                video games with them. These days, I'm venturing into game development with one of them
-                and exploring embedded software with another. I just like to code.
+                In my free time, I’m often found working on various projects alone or with my friends. These days,
+                I'm venturing into game development with one of them and exploring embedded software with another.
+                I just like to code.
             </Typography>
         </Box>
 
