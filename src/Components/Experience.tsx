@@ -1,4 +1,4 @@
-import {Divider, Stack, Box} from "@mui/material";
+import {Stack, Box} from "@mui/material";
 import "../css/sections.css";
 import Typography from "@mui/material/Typography";
 import QtLogo from "../assets/Qt_logo.png";
@@ -31,7 +31,6 @@ export function Experience() {
     return (
         <Box id={"Experience"}>
             <Typography variant={"h3"} className={"section-header"} paddingY={"1rem"}>Experience</Typography>
-            <Divider></Divider>
             <Stack direction={"column"} rowGap={2}>
                 <ExperienceEntry props={fesEntry}></ExperienceEntry>
                 <ExperienceEntry props={fesInternEntry}></ExperienceEntry>

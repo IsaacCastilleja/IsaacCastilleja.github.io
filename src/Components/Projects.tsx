@@ -1,13 +1,17 @@
-import {Divider, Stack, Box} from "@mui/material";
+import {Stack, Box} from "@mui/material";
 import "../css/sections.css";
 import Typography from "@mui/material/Typography";
+import Python from "../assets/python-logo-only.png";
 import Bootstrap from "../assets/Bootstrap.png";
 import Electron from "../assets/Electron.png";
+import Docker from "../assets/docker.svg";
 import JavaScript from "../assets/JavaScript.png";
 import Spotify from "../assets/spotify.png";
 import Tauri from "../assets/tauri.png";
 import Vue from "../assets/Vue.png";
 import Typescript from "../assets/Typescript.png";
+import sqlite from "../assets/sqlite.png";
+import fastapi from "../assets/fastapi.png";
 import Rust from "../assets/rust.jpg";
 import ROS from "../assets/ROS.png";
 import ReactLogo from "../assets/react.png";
@@ -17,16 +21,36 @@ import wordsearch from "../assets/demos/wordsearch_demo.gif";
 import muse from "../assets/demos/museDemo.mp4";
 import museAlt from "../assets/demos/museDemoApple.mp4";
 import portfolio from "../assets/demos/portfolioWebsite.png";
+import weighdlePreview from "../assets/demos/weighdleDemo.gif";
 import {ProjectEntry} from "./ProjectEntry";
 
 export function Projects() {
+    const weighdle = {
+        name: "Weighdle.com",
+        dates: "June 2025",
+        description: "Daily browser game where users guess the weight of the displayed item",
+        demo: weighdlePreview,
+        demoAlt: "Preview image for https://weighdle.com",
+        demoType: "image",
+        link: "https://weighdle.com",
+        skills: [
+            {logo: ReactLogo, name: "React"},
+            {logo: Typescript, name: "TypeScript"},
+            {logo: Python, name: "Python"},
+            {logo: fastapi, name: "FastAPI"},
+            {logo: sqlite, name: "SQLite"},
+            {logo: Docker, name: "Docker"},
+        ]
+
+    }
     const dashboard = {
-        name: "Custom Dashboard for Autonomous Vehicle",
-        dates: "Jan 2023 - Jun 2023",
+        name: "Custom Dashboard GUI for Autonomous Vehicle",
+        dates: "Jan 2023 - June 2023",
         description: "GUI for the dashboard of an autonomous vehicle for the Intelligent Ground Vehicle Competition",
         demo: igvcGUI,
-        demoAlt: "",
+        demoAlt: "GIF demonstration of GUI",
         demoType: "image",
+        link: undefined,
         skills: [
             {logo: JavaScript, name: "JavaScript"},
             {logo: Electron, name: "Electron"},
@@ -41,6 +65,7 @@ export function Projects() {
         demo: portfolio,
         demoAlt: "",
         demoType: "image",
+        link: undefined,
         skills: [
             {logo: Typescript, name: "TypeScript"},
             {logo: ReactLogo, name: "React"},
@@ -54,6 +79,7 @@ export function Projects() {
         demoAlt: museAlt,
         description: "Guess the song game that utilizes the Spotify API to let users use their own playlists",
         demoType: "video",
+        link: undefined,
         skills: [
             {logo: Rust, name: "Rust"},
             {logo: Vue, name: "Vue"},
@@ -69,6 +95,7 @@ export function Projects() {
         demo: wordsearch,
         demoAlt: "",
         demoType: "image",
+        link: undefined,
         skills: [
             {logo: Rust, name: "Rust"},
             {logo: Vue, name: "Vue"},
@@ -78,8 +105,8 @@ export function Projects() {
     return (
         <Box id={"Projects"}>
             <Typography variant={"h3"} className={"section-header"} paddingY={"1rem"}>Projects</Typography>
-            <Divider></Divider>
             <Stack direction={"column"} rowGap={2}>
+                <ProjectEntry props={weighdle}></ProjectEntry>
                 <ProjectEntry props={dashboard}></ProjectEntry>
                 <ProjectEntry props={website}></ProjectEntry>
                 <ProjectEntry props={songGuesser}></ProjectEntry>
